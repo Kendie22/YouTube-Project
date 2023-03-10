@@ -10,6 +10,7 @@ export function Home() {
     // const navigate = useNavigate();
 
     useEffect(() => {
+
         getAllVideos()
             .then((response) => {
                 setVideos(response);
