@@ -4,9 +4,17 @@ export function NavBar() {
         <header>
             <article>
                 <h1>
-
+                    YouTube
                 </h1>
             </article>
+            <nav>
+                <ul>
+                    <li>
+
+                    </li>
+
+                </ul>
+            </nav>
         </header>
     )
 }
