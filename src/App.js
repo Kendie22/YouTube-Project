@@ -4,6 +4,7 @@ import { Home } from "./components/Home";
 import { SingleVideoPage } from "./components/SingleVideoPage";
 import { SearchBar } from "./components/SearchBar";
 import { useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const testYouTubeApi = () => {
