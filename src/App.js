@@ -1,10 +1,12 @@
+import { NavBar } from "./components/NavBar";
+import About from "./components/About";
+import { Home } from "./components/Home";
+import { SingleVideoPage } from "./components/SingleVideoPage";
+import { SearchBar } from "./components/SearchBar";
+import { useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { NavBar } from './components/NavBar';
-import { Home } from './components/Home';
-import { SingleVideoPage } from './components/SingleVideoPage';
-import { SearchBar } from './components/SearchBar'
-import { useEffect } from 'react';
+import getAllVideos from "../api/fetch"
 
 function App() {
   const testYouTubeApi = () => {

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { getAllVideos } from "scr/api/fetch.js";
+import getAllVideos from "../api/fetch";
+
 
 export function Home() {
     const [videos, setVideos] = useState({});
