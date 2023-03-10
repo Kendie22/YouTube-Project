@@ -10,11 +10,11 @@ export default function About() {
   return (
     <div>
       <h2>About Our Project</h2>
-      <p>projectBio</p>
+      <p>{projectBio}</p>
       <h2>About the Developers</h2>
-      <p>shaqFredBio</p>
-      <p>kerrideneBio</p>
-      <p>tayBrooksBio</p>
+      <p>{shaqFredBio}</p>
+      <p>{kerrideneBio}</p>
+      <p>{tayBrooksBio}</p>
     </div>
   );
 }

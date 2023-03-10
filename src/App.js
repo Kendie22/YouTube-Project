@@ -1,6 +1,7 @@
-import "./App.css";
+// import "./App.css";
 import { BrowserRouter, Routes, Route, useActionData } from "react-router-dom";
 import { NavBar } from "./components/NavBar";
+import { About } from "./components/About";
 import { Home } from "./components/Home";
 import { SingleVideoPage } from "./components/SingleVideoPage";
 import { SearchBar } from "./components/SearchBar";
