@@ -1,8 +1,7 @@
 header {
     align-items: center;
-    background: black;
+    background: var(--primary);
     display: flex;
-    color: aliceblue;
     padding: 25px 15% 35px;
   }
   
@@ -48,5 +47,5 @@ header {
   
   header ul li a:hover {
     color: var(--dark);
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--dark);
   }
