@@ -1,10 +1,10 @@
 import './App.css';
 import { BrowserRouter, Routes, Route, useActionData } from 'react-router-dom';
 import { NavBar } from './components/NavBar';
-import { Feed } from './components/Feed';
-import { VideoDetails } from './components/VideoDetails';
-import { SearchFeed } from './components/SearchFeed'
-import { ChannelDetails } from './components/ChannelDetails'
+import { Home } from './components/Home';
+import { SingleVideoPage } from './components/SingleVideoPage';
+import { SearchBar } from './components/SearchBar'
+// import { HomePage } from './components/Home'
 import { useEffect } from 'react';
 
 function App() {
@@ -20,11 +20,11 @@ function App() {
 
       <BrowserRouter>
         <NavBar />
-        \        <Routes>
-          <Route path="/" exact element={<Feed />} />
-          <Route path="/video/:id" element={<VideoDetails />} />
-          <Route path="/channel/:id" element={<ChannelDetails />} />
-          <Route path="/search/:id" element={<SearchFeed />} />
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/video/:id" element={<SingleVideoPage />} />
+          {/* <Route path="/channel/:id" element={<HomePage />} /> */}
+          <Route path="/search/:id" element={<SearchBar />} />
 
         </Routes>
       </BrowserRouter>
