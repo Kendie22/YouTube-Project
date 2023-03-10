@@ -10,9 +10,11 @@ export function NavBar() {
             <nav>
                 <ul>
                     <li>
-
+                        <p>Home</p>
                     </li>
-
+                    <li>
+                        <p>About</p>
+                    </li>
                 </ul>
             </nav>
         </header>

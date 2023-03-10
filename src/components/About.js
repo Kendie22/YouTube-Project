@@ -9,7 +9,7 @@ export default function About() {
 
   return (
     <div>
-      <h2 className>About Our Project</h2>
+      <h2>About Our Project</h2>
       <p>{projectBio}</p>
       <h2>About the Developers</h2>
       <p>{shaqFredBio}</p>
