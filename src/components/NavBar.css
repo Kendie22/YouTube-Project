@@ -1,6 +1,6 @@
 header {
     align-items: center;
-    background: black;
+    background: rgb(242, 10, 41);
     display: flex;
     color: aliceblue;
     padding: 25px 15% 35px;
@@ -22,7 +22,7 @@ header {
   }
   
   header h1 a {
-    color: var(--light);
+    color: orangered;
     text-decoration: none;
   }
   
@@ -48,5 +48,5 @@ header {
   
   header ul li a:hover {
     color: var(--dark);
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(160, 17, 17);
   }
