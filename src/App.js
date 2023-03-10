@@ -8,7 +8,7 @@ import { useEffect } from 'react';
 
 function App() {
   const testYouTubeApi = () => {
-    console.log(process.env.REACT_APP_YOUTUBE_API_KEY)
+    console.log(process.env.REACT_APP_YOUTUBE_API_KEY);
   };
   useEffect(() => {
     testYouTubeApi();
@@ -16,18 +16,16 @@ function App() {
 
   return (
     <div>
-
       <BrowserRouter>
         <NavBar />
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/video/:id" element={<SingleVideoPage />} />
           <Route path="/search/:id" element={<SearchBar />} />
-
+          <Route path="/about" element={<About />} />
         </Routes>
       </BrowserRouter>
     </div>
-
   );
 }
 
