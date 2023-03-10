@@ -22,7 +22,6 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/video/:id" element={<SingleVideoPage />} />
-          {/* <Route path="/channel/:id" element={<HomePage />} /> */}
           <Route path="/search/:id" element={<SearchBar />} />
 
         </Routes>
