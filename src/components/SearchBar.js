@@ -1,3 +1,6 @@
+import { useEffect } from "react";
 
-export function SearchBar() {}
+export function SearchBar() {
 
+
+}
