@@ -5,6 +5,8 @@ import { SingleVideoPage } from "./components/SingleVideoPage";
 import { SearchBar } from "./components/SearchBar";
 import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import './App.css';
+import getAllVideos from "../api/fetch"
 
 function App() {
   const testYouTubeApi = () => {
@@ -22,7 +24,7 @@ function App() {
           <Route path="/" exact element={<Home />} />
           <Route path="/video/:id" element={<SingleVideoPage />} />
           <Route path="/search/:id" element={<SearchBar />} />
-          <Route path="/about" element={<About />} />
+          {/* <Route path="/about" element={<About />} /> */}
         </Routes>
       </BrowserRouter>
     </div>
