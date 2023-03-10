@@ -3,7 +3,7 @@ export default function About() {
 
   const shaqFredBio = "";
   const kerrideneBio =
-    "Kerridene is a dog mom, an avid gardner & enjoys spending time with her family & friends.";
+    "Kerridene is a dog mom, an avid gardner & enjoys spending time with her family & friends. Hello Kerridene";
   const tayBrooksBio =
     "Taylor is an aspiring engineer, mother & lover of crafts.";
 
