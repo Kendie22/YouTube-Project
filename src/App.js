@@ -6,7 +6,7 @@ import { SearchBar } from "./components/SearchBar";
 import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
-import getAllVideos from "../api/fetch"
+// import getAllVideos from "../api/fetch"
 
 function App() {
   const testYouTubeApi = () => {
