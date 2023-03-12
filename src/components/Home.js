@@ -12,7 +12,8 @@ export function Home() {
     console.log(getAllVideos(id))
 
     useEffect(() => {
-        getAllVideos(id)
+
+        getAllVideos()
             .then((response) => {
                 console.log(response)
                 setVideos(response);
