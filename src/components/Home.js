@@ -33,7 +33,7 @@ export function Home() {
     return (
 
         <aside>
-            <button className="delete" onClick={() => setVideos(videos.id)}>
+            <button className="search" onClick={() => setVideos(videos.id)}>
             </button>
             <Link to={`/videos/${id}`}>
                 <button>Search</button>
