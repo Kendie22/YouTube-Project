@@ -1,4 +1,3 @@
-import { type } from "@testing-library/user-event/dist/type";
 import { useState, useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import getAllVideos from "../api/fetch";
@@ -6,19 +5,19 @@ import getAllVideos from "../api/fetch";
 
 export function Home() {
     const [videos, setVideos] = useState({});
-    const { channel } = useParams()
+    const { id } = useParams()
     const [loadingError, setLoadingError] = useState(false);
     console.log(useParams());
     const navigate = useNavigate();
-    console.log(getAllVideos(channel))
+    console.log(getAllVideos(id))
 
     useEffect(() => {
 
         getAllVideos()
             .then((response) => {
-                console.log(response)
+                navigate(`/videos/${id}`);
                 setVideos(response);
-                if (response.channel) {
+                if (response.id) {
                     setLoadingError(false);
                 } else {
                     setLoadingError(true);
@@ -28,15 +27,15 @@ export function Home() {
                 console.log(error);
                 setLoadingError(true);
             });
-    }, []);
+    }, [navigate]);
 
 
     return (
 
         <aside>
-            <button className="search" onClick={() => setVideos(videos.channel)}>
+            <button className="search" onClick={() => setVideos(videos.id)}>
             </button>
-            <Link to={`/videos/${channel}`}>
+            <Link to={`/videos/${id}`}>
                 <button>Search</button>
             </Link>
         </aside>
