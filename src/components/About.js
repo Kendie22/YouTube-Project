@@ -1,3 +1,5 @@
+import { link } from "react-router-dom";
+
 export default function About() {
   const projectBio = "This project was built by a team of 3 developers.  ";
 
@@ -9,12 +11,14 @@ export default function About() {
 
   return (
     <div>
-      <h2>About Our Project</h2>
-      <p>{projectBio}</p>
-      <h2>About the Developers</h2>
-      <p>{shaqFredBio}</p>
-      <p>{kerrideneBio}</p>
-      <p>{tayBrooksBio}</p>
+      <article>
+        <h2>About Our Project</h2>
+        <p>{projectBio}</p>
+        <h2>About the Developers</h2>
+        <p>{shaqFredBio}</p>
+        <p>{kerrideneBio}</p>
+        <p>{tayBrooksBio}</p>
+      </article>
     </div>
   );
 }
