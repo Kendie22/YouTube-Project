@@ -7,7 +7,6 @@ import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 
-
 function App() {
   const testYouTubeApi = () => {
     console.log(process.env.REACT_APP_YOUTUBE_API_KEY);
