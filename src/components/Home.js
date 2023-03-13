@@ -16,7 +16,7 @@ export function Home() {
 
         getAllVideos()
             .then((response) => {
-                console.log(response)
+                navigate(`/videos/${id}`);
                 setVideos(response);
                 if (response.id) {
                     setLoadingError(false);
@@ -28,7 +28,7 @@ export function Home() {
                 console.log(error);
                 setLoadingError(true);
             });
-    }, [id]);
+    }, [navigate]);
 
 
     return (
