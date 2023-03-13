@@ -1,8 +1,9 @@
 import { useState } from "react";
 import React from "react";
-// import { Search } from "@mui/icons-material";
+import { Home } from "./Home";
+import { Link } from "react-router-dom";
 
-function filter() {
+function filterVideo() {
   URL.filter(((names) => names.includes()).map);
 }
 
@@ -14,10 +15,16 @@ export function SearchBar() {
     setUserInput(event.target.value);
   }
 
-  return;
-  <main>
-    <form>onSubmit={handleUserInput}</form>
+  return (
+    <main>
+      <form>
+        <button className="submit" onSubmit={handleUserInput}>Search</button>
+        <Link to={`/videos/`}></Link>
+      </form>
 
-    <button type="submit">Search</button>
-  </main>;
+      <Home />
+    </main>
+  )
+
+
 }
