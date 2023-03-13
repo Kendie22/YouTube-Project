@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import getAllVideos from "../api/fetch";
 
 
@@ -8,15 +7,11 @@ export function Home() {
     const [videos, setVideos] = useState({});
     const { id } = useParams()
     const [loadingError, setLoadingError] = useState(false);
-    console.log(useParams());
-    const navigate = useNavigate();
-    console.log(getAllVideos(id))
 
     useEffect(() => {
 
         getAllVideos()
             .then((response) => {
-                navigate(`/videos/${id}`);
                 setVideos(response);
                 if (response.id) {
                     setLoadingError(false);
@@ -28,17 +23,14 @@ export function Home() {
                 console.log(error);
                 setLoadingError(true);
             });
-    }, [navigate]);
+    }, []);
 
 
     return (
 
         <aside>
-            <button className="search" onClick={() => setVideos(videos.id)}>
+            <button className="search" onClick={() => setVideos(videos)}> Search
             </button>
-            <Link to={`/videos/${id}`}>
-                <button>Search</button>
-            </Link>
         </aside>
     )
 
