@@ -17,7 +17,7 @@ export function SearchBar() {
 
   return (
     <main>
-      <form onSubmit={handleUserInput}>
+      <form onSubmit={handleUserInput({ input })}>
         <input id="input" type="text" placeholder="search" value={input} onSubmit={event => { setUserInput(event.target.value) }}
         />
         <button className="submit" >Search</button>
