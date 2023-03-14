@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
+<<<<<<< HEAD
+=======
+import { useParams } from "react-router-dom";
+>>>>>>> main
 import getAllVideos from "../api/fetch";
 import { SearchBar } from "./SearchBar";
 
