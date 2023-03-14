@@ -13,7 +13,7 @@ export function Home() {
         getAllVideos()
             .then((response) => {
                 setVideos(response);
-                if (response.id) {
+                if (response) {
                     setLoadingError(false);
                 } else {
                     setLoadingError(true);
@@ -29,8 +29,10 @@ export function Home() {
     return (
 
         <aside>
+
             <button className="search" onClick={() => setVideos(videos)}> Search
             </button>
+
         </aside>
     )
 

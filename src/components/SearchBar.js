@@ -19,7 +19,7 @@ export function SearchBar() {
     <main>
       <form>
         <button className="submit" onSubmit={handleUserInput}>Search</button>
-        <Link to={`/videos/`}></Link>
+        <Link to={`/video/id`}></Link>
       </form>
 
       <Home />
