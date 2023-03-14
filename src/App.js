@@ -4,10 +4,12 @@ import { Home } from "./components/Home";
 import { SingleVideoPage } from "./components/SingleVideoPage";
 import { SearchBar } from "./components/SearchBar";
 import { useEffect } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
+
 function App() {
   const testYouTubeApi = () => {
-    console.log(process.env.REACT_APP_YOUTUBE_API_KEY);
+    // console.log(process.env.REACT_APP_YOUTUBE_API_KEY);
   };
   useEffect(() => {
     testYouTubeApi();
