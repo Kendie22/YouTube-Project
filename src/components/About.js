@@ -6,7 +6,7 @@ export default function About() {
   const kerrideneBio =
     "Kerridene is a dog mom, an avid gardner & enjoys spending time with her family & friends.";
   const tayBrooksBio =
-    "Taylor is an aspiring engineer, mother & lover of crafts. She had no coding experience prior to joining Pursuit, but in the last few months ";
+    "Taylor is an aspiring engineer, mother & lover of crafts.";
 
   return (
     <div>
