@@ -1,17 +1,20 @@
+import React from "react";
+import "./About.css";
+
 import { link } from "react-router-dom";
 
 export default function About() {
   const projectBio =
     "This project was built by a team of 3 developers. We used a React framework to create a Youtube clone that allows the user to search & display a single video as well as the abilty to share & send any video. ";
 
-  const shaqFredBio = "";
+  const shaqFredBio = "Shaquala's Bio";
   const kerrideneBio =
     "Kerridene is a dog mom, an avid gardner & enjoys spending time with her family & friends.";
   const tayBrooksBio =
-    "Taylor is an aspiring engineer, mother & lover of crafts.";
+    "Taylor is an aspiring engineer, mother & lover of crafts. While she is new to coding, she looks forward to learning more about the development of web applications & building out more personal & team porjects. ";
 
   return (
-    <div>
+    <div style={{ textAlignVertical: "center", textAlign: "center" }}>
       <h2>About Our Project</h2>
       <p>{projectBio}</p>
       <h2>About the Developers</h2>
