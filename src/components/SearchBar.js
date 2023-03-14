@@ -12,17 +12,17 @@ export function SearchBar() {
 
   function handleUserInput(event) {
     event.preventDefault();
-    setUserInput(event.target.value);
+    console.log(input)
   }
 
   return (
     <main>
-      <form>
-        <button className="submit" onSubmit={handleUserInput}>Search</button>
-        <Link to={`/video/id`}></Link>
+      <form onSubmit={handleUserInput}>
+        <input id="input" type="text" placeholder="search" value={input} onChange={event => { setUserInput(event.target.value) }}
+        />
+        <button className="submit" type="submit">Search</button>
       </form>
 
-      <Home />
     </main>
   )
 
