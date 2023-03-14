@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { useParams } from "react-router-dom";
 import getAllVideos from "../api/fetch";
+import { SearchBar } from "./SearchBar";
 
 
 export function Home() {
@@ -31,10 +31,11 @@ export function Home() {
 
         <aside>
 
-            <button className="search" onClick={() => setVideos(videos)}> Search
-            </button>
-
+            {/* <button className="search" onClick={() => setVideos(videos)}> Search
+            </button> */}
+            <SearchBar />
         </aside>
+
     )
 
 }
