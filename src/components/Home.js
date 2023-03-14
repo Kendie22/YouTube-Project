@@ -1,22 +1,38 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { getAllVideos } from "src/api/fetch.js";
+import { useParams } from "react-router-dom";
+import getAllVideos from "../api/fetch";
+
 
 export function Home() {
     const [videos, setVideos] = useState({});
-    // const [loadingError, setLoadingError] = useState(false);
-    // // console.log(useParams());
-    // const { id } = useParams(); //useParams gives us access to the parameters we set in our paths in our routing
-    // const navigate = useNavigate();
+    const { id } = useParams()
+    const [loadingError, setLoadingError] = useState(false);
 
     useEffect(() => {
+
         getAllVideos()
             .then((response) => {
                 setVideos(response);
+                if (response.id) {
+                    setLoadingError(false);
+                } else {
+                    setLoadingError(true);
+                }
+            })
+            .catch((error) => {
+                console.log(error);
+                setLoadingError(true);
+            });
+    }, []);
 
 
-            }, []);
+    return (
 
-    })
+        <aside>
+            <button className="search" onClick={() => setVideos(videos)}> Search
+            </button>
+        </aside>
+    )
+
 }
-
