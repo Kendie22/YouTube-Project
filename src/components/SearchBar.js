@@ -12,16 +12,15 @@ export function SearchBar() {
 
   function handleUserInput(event) {
     event.preventDefault();
-    setUserInput(event.target.value);
+    console.log(input)
   }
 
   return (
     <main>
-      <form onSubmit={handleUserInput({ input })}>
-        <input id="input" type="text" placeholder="search" value={input} onSubmit={event => { setUserInput(event.target.value) }}
+      <form onSubmit={handleUserInput}>
+        <input id="input" type="text" placeholder="search" value={input} onChange={event => { setUserInput(event.target.value) }}
         />
-        <button className="submit" >Search</button>
-        <input type="submit" />
+        <button className="submit" type="submit">Search</button>
       </form>
 
     </main>
