@@ -1,7 +1,6 @@
 import React from "react";
 import "./About.css";
-
-import { link } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 export default function About() {
   const projectBio =
@@ -15,6 +14,11 @@ export default function About() {
 
   return (
     <div style={{ textAlignVertical: "center", textAlign: "center" }}>
+      <article key="about">
+        <Routes>
+          <Route path="/" element={<Navigate to="Home" />} />
+        </Routes>
+      </article>
       <h2>About Our Project</h2>
       <p>{projectBio}</p>
       <h2>About the Developers</h2>
