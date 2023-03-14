@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import getAllVideos from "../api/fetch";
 import { SearchBar } from "./SearchBar";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 
 export function Home() {
