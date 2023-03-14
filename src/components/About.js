@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
-
-import { link } from "react-router-dom";
+import { Home } from "./Home";
+import { Link } from "react-router-dom";
 
 export default function About() {
   const projectBio =
@@ -30,6 +30,7 @@ export default function About() {
       <td>
         <a href={"https://github.com/taylorbrooks007"}>Taylor's GitHub Link</a>
       </td>
+      <Home />
     </div>
   );
 }
