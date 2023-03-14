@@ -17,12 +17,13 @@ export function SearchBar() {
 
   return (
     <main>
-      <form>
-        <button className="submit" onSubmit={handleUserInput}>Search</button>
-        <Link to={`/video/id`}></Link>
+      <form onSubmit={handleUserInput}>
+        <input id="input" type="text" placeholder="search" value={input} onSubmit={event => { setUserInput(event.target.value) }}
+        />
+        <button className="submit" >Search</button>
+        <input type="submit" />
       </form>
 
-      <Home />
     </main>
   )
 
