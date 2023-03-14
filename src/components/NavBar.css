@@ -40,7 +40,7 @@ header {
   
   header ul li a {
     color: var(--light);
-    border-bottom: 2px solid var(--light);
+    border-bottom: 2px solid var(grey);
     font-weight: 500;
     padding-bottom: 5px;
     text-decoration: none;

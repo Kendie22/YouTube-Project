@@ -1,6 +1,8 @@
 import React from "react";
 import "./About.css";
 
+import { link } from "react-router-dom";
+
 export default function About() {
   const projectBio =
     "This project was built by a team of 3 developers. We used a React framework to create a Youtube clone that allows the user to search & display a single video as well as the abilty to share & send any video. ";
