@@ -14,7 +14,7 @@ export function NavBar() {
             <nav>
                 <ul>
                     <li>
-                        <Link to="/"><p>Home</p> </Link>
+                        <Link to="/Home"><p>Home</p> </Link>
                     </li>
                     <li>
                         <Link to="/About"> <p>About</p></Link>
