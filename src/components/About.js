@@ -10,7 +10,7 @@ export default function About() {
   const kerrideneBio =
     "Kerridene is a dog mom, an avid gardner & enjoys spending time with her family & friends.";
   const tayBrooksBio =
-    "Taylor is an aspiring engineer, mother & lover of crafts. While she is new to coding, she looks forward to learning more about the development of web applications & building out more personal & team porjects. ";
+    "Taylor is an aspiring engineer, mother & lover of crafts. While she is new to coding, she looks forward to learning more about the development of web applications & building out more personal & team projects. ";
 
   return (
     <div style={{ textAlignVertical: "center", textAlign: "center" }}>
