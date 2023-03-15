@@ -2,6 +2,7 @@ import "./NavBar.css";
 import { Home } from "./Home.js";
 import { Link } from "react-router-dom";
 import { BrowserRouter, Route, Router } from "react-router-dom"
+import { React } from "react";
 
 export function NavBar() {
     return (
