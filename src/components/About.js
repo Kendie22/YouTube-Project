@@ -23,17 +23,16 @@ export default function About() {
       <p>{projectBio}</p>
       <h2>About the Developers</h2>
       <p>{shaqFredBio}</p>
-      <td>
-        <a href={"https://github.com/shaqfred"}>Shaquala's GitHub Link</a>
-      </td>
+
+      <a href={"https://github.com/shaqfred"}>Shaquala's GitHub Link</a>
+
       <p>{kerrideneBio}</p>
-      <td>
-        <a href={"https://github.com/Kendie22"}>Kerridene's GitHub Link</a>
-      </td>
+
+      <a href={"https://github.com/Kendie22"}>Kerridene's GitHub Link</a>
+
       <p>{tayBrooksBio}</p>
-      <td>
-        <a href={"https://github.com/taylorbrooks007"}>Taylor's GitHub Link</a>
-      </td>
+
+      <a href={"https://github.com/taylorbrooks007"}>Taylor's GitHub Link</a>
     </div>
   );
 }
