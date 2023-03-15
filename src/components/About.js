@@ -15,9 +15,9 @@ export default function About() {
   return (
     <div style={{ textAlignVertical: "center", textAlign: "center" }}>
       <article key="about">
-        <Routes>
+        {/* <Routes>
           <Route path="/" element={<Navigate to="Home" />} />
-        </Routes>
+        </Routes> */}
       </article>
       <h2>About Our Project</h2>
       <p>{projectBio}</p>
