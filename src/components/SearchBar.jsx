@@ -1,6 +1,6 @@
 import { useState } from "react";
 import React from "react";
-import { Home } from "./Home";
+import { Home } from "./Home.jsx";
 import { Link } from "react-router-dom";
 
 function filterVideo() {
@@ -9,6 +9,7 @@ function filterVideo() {
 
 export function SearchBar() {
   const [input, setUserInput] = useState("");
+  const [video, setVideo] = useState({});
 
   function handleUserInput(event) {
     event.preventDefault();

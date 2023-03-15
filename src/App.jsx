@@ -1,8 +1,8 @@
-import { NavBar } from "./components/NavBar";
-import About from "./components/About";
-import { Home } from "./components/Home";
+import { NavBar } from "./components/NavBar.jsx";
+import About from "./components/About.jxs";
+import { Home } from "./components/Home.jsx";
 // import { SingleVideoPage } from "./components/SingleVideoPage";
-import { SearchBar } from "./components/SearchBar";
+import { SearchBar } from "./components/SearchBar.jsx";
 import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
