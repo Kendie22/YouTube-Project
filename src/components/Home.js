@@ -1,9 +1,5 @@
-import { useState, useEffect } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
-import getAllVideos from "../api/fetch.js";
+import { useState } from "react";
 import { SearchBar } from "./SearchBar.js";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { getUserSearch } from "../api/fetch.js";
 import { VideoDetails } from "./VideoDetails.js";
 
 

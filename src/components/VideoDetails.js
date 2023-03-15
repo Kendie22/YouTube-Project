@@ -1,5 +1,4 @@
-import { getUserSearch } from "../api/fetch";
-import { SearchBar } from "./SearchBar";
+
 import { Link } from "react-router-dom";
 
 //pass search results as a prop

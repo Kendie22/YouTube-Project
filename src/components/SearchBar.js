@@ -1,7 +1,5 @@
 import { useState } from "react";
 import React from "react";
-import { Home } from "./Home.js";
-import { Link } from "react-router-dom";
 import { getUserSearch } from "../api/fetch.js";
 
 

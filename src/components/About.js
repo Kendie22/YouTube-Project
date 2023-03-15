@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import { Routes, Route, Navigate } from "react-router-dom";
+
 
 export default function About() {
   const projectBio =
