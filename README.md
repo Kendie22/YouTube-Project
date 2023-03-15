@@ -1,12 +1,12 @@
-<p>YouTube Clone Project</>
+YouTube Clone Project
 Developers
 Taylor Brooks
 Shaquala Fredericks
 Kerridene Small
 Objectives
 
-Trello Link
-Miro Link
+Trello Link: https://trello.com/b/vEUo0hHX/youtube-project
+Miro Link: https://miro.com/app/board/uXjVMfSmLVg=/?boardAccessToken=91zXZ7hIvqp5mH6eXEIGaEpAdWFf5Ggs&autoplay=true
 
 Installation
 Install this repo with npm

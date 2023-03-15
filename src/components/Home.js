@@ -1,39 +1,33 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import getAllVideos from "../api/fetch";
+import getAllVideos from "../api/fetch.js";
+import { SearchBar } from "./SearchBar.js";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { getUserSearch } from "../api/fetch.js";
+import { VideoDetails } from "./VideoDetails.js";
 
+
+// function filterVideos(search, video) {
+//     return video.filter((video) => {
+//         return video.title.toLowerCase().includes(search.toLowerCase());
+//     });
+// }
 
 export function Home() {
-    const [videos, setVideos] = useState({});
-    const { id } = useParams()
-    const [loadingError, setLoadingError] = useState(false);
-
-    useEffect(() => {
-
-        getAllVideos()
-            .then((response) => {
-                setVideos(response);
-                if (response) {
-                    setLoadingError(false);
-                } else {
-                    setLoadingError(true);
-                }
-            })
-            .catch((error) => {
-                console.log(error);
-                setLoadingError(true);
-            });
-    }, []);
-
 
     return (
+        <div>
+            <section className="videos-index-wrapper">
 
-        <aside>
+                <br />
+                <section className="videos-index">
 
-            <button className="search" onClick={() => setVideos(videos)}> Search
-            </button>
+                    <SearchBar />
+                    <VideoDetails />
 
-        </aside>
-    )
+                </section>
+            </section>
 
+        </div>
+    );
 }
