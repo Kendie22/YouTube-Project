@@ -14,6 +14,8 @@ import { VideoDetails } from "./VideoDetails.js";
 // }
 
 export function Home() {
+    const [searchResults, setSearchResults] = useState([])
+
 
     return (
         <div>
@@ -22,8 +24,8 @@ export function Home() {
                 <br />
                 <section className="videos-index">
 
-                    <SearchBar />
-                    <VideoDetails />
+                    <SearchBar setSearchResults={setSearchResults} />
+                    <VideoDetails searchResults={searchResults} />
 
                 </section>
             </section>

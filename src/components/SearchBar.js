@@ -2,22 +2,23 @@ import { useState } from "react";
 import React from "react";
 import { Home } from "./Home.js";
 import { Link } from "react-router-dom";
+import { getUserSearch } from "../api/fetch.js";
 
 
 
 
-// function filterVideo() {
-//   URL.filter(((names) => names.includes()).map);
-// }
-
-export function SearchBar() {
+export function SearchBar({ setSearchResults }) {
   const [input, setUserInput] = useState("");
-  const [video, setVideo] = useState({});
 
   function handleUserInput(event) {
     event.preventDefault();
-    console.log(input)
+    getUserSearch(input)
+      .then((response) => {
+        setSearchResults(response.items)
+      })
+
   }
+
 
   return (
     <main>
