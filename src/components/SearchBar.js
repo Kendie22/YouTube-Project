@@ -7,7 +7,7 @@ import { getUserSearch } from "../api/fetch.js";
 
 
 
-export function SearchBar({ setSearchResults }) {
+export function SearchBar({ setSearchResults, setHasSearched, hasSearched }) {
   const [input, setUserInput] = useState("");
 
   function handleUserInput(event) {
@@ -15,6 +15,9 @@ export function SearchBar({ setSearchResults }) {
     getUserSearch(input)
       .then((response) => {
         setSearchResults(response.items)
+        if (!hasSearched) {
+          setHasSearched(true)
+        }
       })
 
   }

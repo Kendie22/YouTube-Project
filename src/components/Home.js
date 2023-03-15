@@ -7,15 +7,9 @@ import { getUserSearch } from "../api/fetch.js";
 import { VideoDetails } from "./VideoDetails.js";
 
 
-// function filterVideos(search, video) {
-//     return video.filter((video) => {
-//         return video.title.toLowerCase().includes(search.toLowerCase());
-//     });
-// }
-
 export function Home() {
     const [searchResults, setSearchResults] = useState([])
-
+    const [hasSearched, setHasSearched] = useState(false)
 
     return (
         <div>
@@ -24,8 +18,8 @@ export function Home() {
                 <br />
                 <section className="videos-index">
 
-                    <SearchBar setSearchResults={setSearchResults} />
-                    <VideoDetails searchResults={searchResults} />
+                    <SearchBar setSearchResults={setSearchResults} setHasSearched={setHasSearched} />
+                    <VideoDetails searchResults={searchResults} hasSearched={hasSearched} />
 
                 </section>
             </section>
