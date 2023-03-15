@@ -10,7 +10,7 @@ export function VideoDetails({ searchResults, hasSearched }) {
         const title = item.snippet.title
         const { url, width, height } = item.snippet.thumbnails.medium
         const id = item.id.videoId
-
+        console.log(id)
         return (
             <div key={id}>
                 <Link to={`/videos/${id}`} state={item}>
