@@ -7,10 +7,19 @@ body{
     text-align: center;
     text-decoration: underline;
     text-decoration-color: blue;
-    min-width: fit-content;
+    
     
 }
 button:hover {
     border: 2px solid #682a98;
     background: #625c94;
 }
+/* .Searchbar{
+    position:absolute;
+    top:355px;
+    left:575px;
+}
+.Searchbar input{
+    height:30px;
+    width:50px;
+} */
