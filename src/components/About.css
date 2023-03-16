@@ -1,10 +1,13 @@
 body{
     font-family: fantasy;
-    font-size: larger;
+    font-size: x-large;
     background-color: aqua;
     font-weight: bolder;
     margin:auto;
     text-align: center;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    min-width: fit-content;
     
 }
 button:hover {
